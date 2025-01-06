@@ -1,0 +1,239 @@
+* {
+    margin: 0px;
+    font-family: Arial;
+    border: border-box;
+}
+.border {
+    border: 2px solid transparent;
+}
+.border:hover {
+    border: 2px solid #ffaa00;
+    border-radius: 5px;
+}
+
+/* NAVBAR */
+.navbar {
+    height: 60px;
+    background-color: #0f1111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* box1 */
+.nav-logo {
+    height: 60px;
+    width: 110px;
+}
+.logo {
+    height: 58px;
+    width: 110px;
+    background-image: url("amazon-logo.png");
+    background-size: cover;
+}
+
+/* box2 */
+.add-icon {
+    display: flex;
+    align-items: center;
+}
+.add_first {
+    color:#cccccc;
+    font-size: 1rem;
+    margin-left: 15px;
+}
+.add_second {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-left: 3px;
+}
+
+/* box3 */
+.nav-search {
+    height: 40px;
+    width: 800px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    justify-content: space-evenly;
+    background-color: #1d1c1c;
+}
+.nav-search:hover {
+    border: 2px solid #ffaa00;
+}
+
+.search-select {
+    height: 38px;
+    width: 45px;
+    display: flex;
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    text-align: center;
+    background-color: #dad5d5;
+}
+.search-area {
+    height: 33.21px;
+    width: 100%;
+    display: flex;
+    font-size: 1.1rem;
+}
+.search-icon {
+    height: 38px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffaa00;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px; 
+}
+
+/* box4 */
+span {
+    font-size: 0.9rem;
+}
+.navfont-second {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+/* box6 */
+.nav-cart {
+    display: flex;
+    font-size: 1.1rem;
+    align-items: baseline;
+}
+.nav-cart i {
+    font-size: 30px;
+}
+
+
+/* PANEL */
+.panel {
+    height: 40px;
+    background-color: #222d3f;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.panel-all {
+    font-size: 1.1rem;
+    font-weight: 600;
+    transform: translateX(-80px);
+}
+.panel-ops p {
+    display: inline-block;
+    margin-left: 10px;
+}
+.panel-ops {
+    width: 80%;
+    font-size: 1.1rem;
+    transform: translateX(-160px);
+}
+
+/* HERO-SECTION */
+.hero-section {
+    background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/sthaneka/Alphonsa/GW/NOV/BAU/GW_HERO_PC_1_2x._CB542130280_.jpg);
+    background-size: cover;
+    height: 350px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.hero-msg {
+    background-color: white;
+    color: black;
+    height: 40px;
+    width: 80%;
+    display:  flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+.hero-msg a {
+    text-decoration: none;
+    color: #202d9e;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+
+/* SHOP-SECTION */
+.shop-section {
+    height: 400px;
+    background-color: #d5c9d3bb;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.box {
+    background-color: #b1bac84d;
+    border: 2px solid transparent;
+    height: 300px;
+    width: 300px;
+    margin: 20px 0px 15px;
+}
+.box-content{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.box-content p{
+    padding-top: 10px;
+    color: #007185;
+    align-self: flex-end;
+}
+
+/* BOX1 */
+.box1-image {
+    background-image: url("box1.jpeg");
+    height: 220px;
+    background-size: cover;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/* BOX2 */
+.box2-image{
+    display: flex;
+    flex-wrap: wrap;
+    height: 220px;
+    justify-content: space-around;
+}
+.box2-1{
+    background-image: url("box2 (2).jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;
+    margin: 5px 5px 5px 5px;
+}
+.box2-2{
+    background-image: url("box2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;
+    margin: 5px 5px 5px 5px;
+}
+.box2-3{
+    background-image: url("box3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;
+    margin: 5px 5px 5px 5px;
+}
+.box2-4{
+    background-image: url("box4.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;
+    margin: 5px 5px 5px 5px;
+}
