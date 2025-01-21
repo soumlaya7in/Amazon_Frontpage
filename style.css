@@ -3,14 +3,15 @@
     font-family: Arial;
     border: border-box;
 }
-.border {
-    border: 2px solid transparent;
-}
+
 .border:hover {
     border: 2px solid #ffaa00;
     border-radius: 5px;
+    transition: border-color 0.5s ease-in-out;
 }
 
+
+/* HEADER SECTION OF THE PAGE */
 /* NAVBAR */
 .navbar {
     height: 60px;
@@ -117,23 +118,27 @@ span {
     color: white;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: flex-start;
 }
 .panel-all {
+    width: auto;
     font-size: 1.1rem;
     font-weight: 600;
-    transform: translateX(-80px);
-}
-.panel-ops p {
-    display: inline-block;
-    margin-left: 10px;
 }
 .panel-ops {
-    width: 80%;
+    width: 90%;
     font-size: 1.1rem;
-    transform: translateX(-160px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.panel-ops p {
+    margin-left: 10px;
+    justify-content: space-between;
 }
 
+
+/* MAIN SECTION OF THE PAGE */
 /* HERO-SECTION */
 .hero-section {
     background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/sthaneka/Alphonsa/GW/NOV/BAU/GW_HERO_PC_1_2x._CB542130280_.jpg);
@@ -163,77 +168,410 @@ span {
 
 /* SHOP-SECTION */
 .shop-section {
-    height: 400px;
-    background-color: #d5c9d3bb;
+    background-color: #e9e7e7;
     padding: 20px;
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 .box {
     background-color: #b1bac84d;
     border: 2px solid transparent;
-    height: 300px;
-    width: 300px;
+    height: 350px;
+    width: 350px;
     margin: 20px 0px 15px;
+    display : flex;
 }
-.box-content{
+.box-content {
     padding-left: 10px;
     padding-right: 10px;
+    position: relative;
 }
-.box-content p{
+.para {
     padding-top: 10px;
     color: #007185;
-    align-self: flex-end;
+    position: absolute;
+    bottom: 5px;
 }
 
 /* BOX1 */
 .box1-image {
     background-image: url("box1.jpeg");
-    height: 220px;
+    display: flex;
+    height: 250px;
+    width: 100%;
     background-size: cover;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: space-around;
+    margin: 10px 10px 10px 30px;
 }
+
 /* BOX2 */
-.box2-image{
+.box2-image {
     display: flex;
     flex-wrap: wrap;
     height: 220px;
     justify-content: space-around;
+    margin: 10px 10px 10px 10px;
 }
-.box2-1{
-    background-image: url("box2 (2).jpg");
+.box2-1 {
+    background-image: url("box2-1.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100px;
-    width: 100px;
+    height: 120px;
+    width: 120px;
     margin: 5px 5px 5px 5px;
 }
-.box2-2{
-    background-image: url("box2.jpg");
+.box2-2 {
+    background-image: url("box2-2.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100px;
-    width: 100px;
+    height: 120px;
+    width: 120px;
     margin: 5px 5px 5px 5px;
 }
-.box2-3{
-    background-image: url("box3.jpg");
+.box2-3 {
+    background-image: url("box2-3.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100px;
-    width: 100px;
+    height: 120px;
+    width: 120px;
     margin: 5px 5px 5px 5px;
 }
-.box2-4{
-    background-image: url("box4.jpg");
+.box2-4 {
+    background-image: url("box2-4.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100px;
-    width: 100px;
+    height: 120px;
+    width: 120px;
     margin: 5px 5px 5px 5px;
+}
+
+/* BOX3 */
+.box3-image {
+    display: flex;
+    flex-wrap: wrap;
+    height: 220px;
+    justify-content: space-around;
+    margin: 10px 10px 10px 10px;
+}
+.box3-1 {
+    background-image: url("box3-1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 120px;
+    width: 120px;
+    margin: 5px 5px 5px 5px;
+}
+.box3-2 {
+    background-image: url("box3-2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 120px;
+    width: 120px;
+    margin: 5px 5px 5px 5px;
+}
+.box3-3 {
+    background-image: url("box3-3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 120px;
+    width: 120px;
+    margin: 5px 5px 5px 5px;
+}
+.box3-4 {
+    background-image: url("box3-4.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 120px;
+    width: 120px;
+    margin: 5px 5px 5px 5px;
+}
+
+/* BOX4 */
+.box4-image {
+    display: flex;
+    flex-wrap: wrap;
+    height: 220px;
+    justify-content: space-around;
+    margin: 10px 10px 10px 10px;
+}
+.box4-1 {
+    background-image: url("box4-1.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 120px;
+    width: 120px;
+    margin: 5px 5px 5px 5px;
+}
+.box4-2 {
+    background-image: url("box4-2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 120px;
+    width: 120px;
+    margin: 5px 5px 5px 5px;
+}
+.box4-3 {
+    background-image: url("box4-3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 120px;
+    width: 120px;
+    margin: 5px 5px 5px 5px;
+}
+.box4-4 {
+    background-image: url("box4-4.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 120px;
+    width: 120px;
+    margin: 5px 5px 5px 5px;
+}
+
+/* BOX5 */
+.box5-image {
+    display: flex;
+    flex-wrap: wrap;
+    height: 220px;
+    justify-content: space-around;
+    margin: 10px 10px 10px 10px;
+}
+.box5-1 {
+    background-image: url("box5-1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 120px;
+    width: 120px;
+    margin: 5px 5px 5px 5px;
+}
+.box5-2 {
+    background-image: url("box5-2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 120px;
+    width: 120px;
+    margin: 5px 5px 5px 5px;
+}
+.box5-3 {
+    background-image: url("box5-3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 120px;
+    width: 120px;
+    margin: 5px 5px 5px 5px;
+}
+.box5-4 {
+    background-image: url("box5-4.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 120px;
+    width: 120px;
+    margin: 5px 5px 5px 5px;
+}
+
+/* BOX6 */
+.box6-image {
+    display: flex;
+    flex-wrap: wrap;
+    height: 220px;
+    justify-content: space-around;
+    margin: 10px 10px 10px 10px;
+}
+.box6-1 {
+    background-image: url("box6-1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 120px;
+    width: 120px;
+    margin: 5px 5px 5px 5px;
+}
+.box6-2 {
+    background-image: url("box6-2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 120px;
+    width: 120px;
+    margin: 5px 5px 5px 5px;
+}
+.box6-3 {
+    background-image: url("box6-3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 120px;
+    width: 120px;
+    margin: 5px 5px 5px 5px;
+}
+.box6-4 {
+    background-image: url("box6-4.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 120px;
+    width: 120px;
+    margin: 5px 5px 5px 5px;
+}
+
+/* BOX7 */
+.box7-image {
+    background-image: url("box7.jpg");
+    display: flex;
+    height: 250px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: space-around;
+    margin: 10px 10px 10px 50px;
+}
+
+/* BOX8 */
+.box8-image {
+    background-image: url("box8.jpeg");
+    display: flex;
+    height: 250px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: space-around;
+    margin: 10px 10px 10px 50px;
+}
+
+
+/* FOOTER SECTION OF THE PAGE */
+/* AD-SECTION */
+.ad-content {
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.ad-image {
+    background-image: url("ad_image.jpg");
+    background-size: cover;
+    height: 300px;
+    width: 300%;
+    padding: 5px 5px 5px 5px;
+}
+
+/* SIGN-IN RECOMMENDATION */
+.recommendation {
+    background-color: #f9f9f9;
+    width: 100%;
+    margin-top: 10px;   
+    padding-top: 10px;
+    text-align: center;
+}
+.sign-in {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sign-in-icon {
+    background-color: #ffaa00;
+    font-weight: 500;
+    height: 50px;
+    width: 100px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sign-in-icon:hover {
+    background-color: #eca63d;
+}
+
+/* HELP AND SEEDBACK SECTION */
+/* BACK BUTTON */
+.back_button {
+   height: 50px;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   /* border: 2px solid white; */
+   background-color: #37475A;
+}
+.going_to_top {
+    height: 20px;
+    width: 30px;
+    border: 3px solid white;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+}
+
+/* MENU SECTION */
+.menu-container {
+    background-color: #232f3e;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+.menu-column {
+    
+    padding: 0 10px;
+    display: table-cell;
+    justify-items: flex-start;
+}
+.menu-column h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.menu-column ul {
+    list-style-type: none;
+}
+.menu-column ul li {
+    margin: 5px 0px;
+    color: white;
+    text-decoration: none;
+}
+.menu-column ul li:hover {
+    text-decoration: underline;
+}
+
+/* FOOTER NAVBAR */
+.footer-navbar {
+    background-color: #3a4553;
+    margin-top: 2px;
+    border-top: 2px solid #3a4553;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.adding-logo {
+    background-image: url("amazon_logo.png");
+    background-size: cover;
+    height: 50px;
+    width: 60px;  
 }
